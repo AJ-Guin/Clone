@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url("assets/images/bg.jpg");
+    background-position: center center;
+    /* background-size: max(1150px, 100vw); */
+    background-repeat: no-repeat;
+    /* height: 644px; */
+    height: 100%;
+    width: 100%;
+    position: relative;
+    object-fit: cover;
+    object-position: center;
+}
+
+.main .box {
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    opacity: 0.72;
+    background-color: black;
+}
+
+nav {
+    max-width: 75vw;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+    height: 90px;
+}
+
+nav img {
+    color: red;
+    position: relative;
+    z-index: 1;
+}
+
+nav button {
+    position: relative;
+    z-index: 1;
+}
+.hero {
+    height: calc(100% - 90px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    align-items: center;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    position: relative;
+    gap: 10px;
+    font-family: "Poppins", serif;
+    padding: 60px 23px;
+}
+.hero-button {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 40px;
+}
+
+.hero> :first-child {
+    font-size: 58px;
+    font-weight: 700;
+    text-align: center;
+}
+.hero> :nth-child(2) {
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.hero> :nth-child(3) {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.hero> :nth-child(4) {
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.separation {
+    height: 5px;
+    width: 100%;
+    background-color: rgb(51, 51, 51);
+}
+
+.btn {
+    padding: 5px 25px;
+    font-weight: 500;
+    margin: 0px 3px;
+    color: white;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: rgba(23, 23, 23, 0.2);
+    font-family: "Poppins", serif;
+    border: 0.1px solid rgb(101, 101, 101);
+}
+
+.btn-red {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    font-size: 17px;
+    border-radius: 4px;
+}
+
+
+.main input {
+    padding: 13.5px 100px 13.5px 6px;
+    font-size: 15px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border: 0.01px solid rgb(130, 130, 130);
+    background-color: rgba(23, 23, 23, 0.5);
+    font-family: "Poppins", serif;
+    color: white;
+}
+
+.btn-red-sm {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    max-width: 75vw;
+    margin: auto;
+    color: white;
+    font-family: "Poppins", serif;
+    height: 70vh;
+}
+.secImg{
+    position: relative;
+}
+.secImg img {
+    width:383px;
+    position: relative;
+    z-index:10;
+}
+.secImg video{
+    position: absolute;
+    right: 54px;
+    top: 33px;
+    height: 211px;
+    width: 279px;
+}
+section.first> div{
+    display: flex;
+    flex-direction: column;
+}
+.first>div :first-child{
+    font-size: 45px;
+    font-weight: bolder;
+}
+.first>div :nth-child(2){
+    font-size: 20px;
+}
+.faq h1{
+    text-align: center;
+    font-size: 44px;
+    font-family: "Poppins", serif ;
+    padding: 30px 30px 0px 30px;
+}
+.faq{
+    background-color: black;
+    color: white;
+}
+.faqbox{
+    background-color:rgb(40, 40, 40);
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    margin: 7px 150px;
+    font-family:"Poppins", serif;
+    justify-content: space-between;
+    font-size: 24px;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+.faqbox:hover{
+    background-color: rgb(61, 61, 61);
+}
+.faqbox svg{
+    filter: invert(1);
+    width: 37px;
+    height: 37px;
+}
+.faq .last{
+    margin-bottom: 70px;
+}
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 75vw;
+    margin: auto;
+    padding: 0px 40px;
+}
+.special{
+    color: rgb(159, 159, 159);
+    max-width: 75vw;
+    margin: auto;
+    padding:50px;
+    font-family:"Poppins", serif ;
+    font-size: 17px;
+}
+.footer-item a{
+    display: flex;
+    color: rgb(159, 159, 159);
+    font-family:"Poppins", serif ;
+    font-size: 15px;
+    padding: 5px 0px;
+}
+.end{
+    color: rgb(159, 159, 159);
+    max-width: 75vw;
+    margin: auto;
+    font-family:"Poppins", serif ;
+    font-size: 15px;
+    height: 120px;
+    padding: 100px;
+}
+@media only screen and (max-width:685px){
+    
+    .first{
+        display: block;
+        text-align: center;
+        margin:auto;
+        width: 100vw;
+    }
+    .secImg video{
+        position: absolute;
+        right: -5px;
+        top: 33px;
+        height: 211px;
+        width: 279px;
+    }
+    nav {
+        max-width: 75vw;
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        align-items: center;
+        height: 90px;
+    }
+    nav img {
+        color: red;
+        position: relative;
+        z-index: 1;
+        height: 112px;
+        width: 118px;
+    }
+    .btn {
+        padding: 4px 15px;
+        font-weight: 200;
+        margin: 0px 3px;
+        color: white;
+        border-radius: 4px;
+        box-sizing: border-box;
+        background-color: rgba(23, 23, 23, 0.2);
+        font-family: "Poppins", serif;
+        border: 0.1px solid rgb(101, 101, 101);
+    }
+    .btn-red-sm {
+        background-color: red;
+        color: white;
+        border: none;
+        padding: 4px 15px;
+    }
+    .btn-red {
+        background-color: red;
+        color: white;
+        border: none;
+        padding: 10px 26px;
+        font-size: 15px;
+        border-radius: 4px;
+        margin-top: 10px;
+    }
+    
+    
+    
+}
